@@ -3,3 +3,4 @@ Este repositorio é destinado a avaliação A3 da unidade curricular gestão e q
 Alunos:
 
 Marcelo Henrique Silvestre da Silva- RA 1352312397
+Anne Caroline da Silva Medeiros - RA 1282413952 
