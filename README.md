@@ -1,4 +1,4 @@
-Este repositorio é destinado a avaliação A3 da unidade curricular gestão e qualidade de software, gerido pelos professores Henrique Poyatos e Arquelau Pasta
+Este repositorio é destinado a avaliação A3 da unidade curricular gestão e qualidade de software, gerido pelos professores Henrique Poyatos e Arquelau Pasta, cujo o objetivo é refatorar um código "lixo".
 
 Alunos:
 
