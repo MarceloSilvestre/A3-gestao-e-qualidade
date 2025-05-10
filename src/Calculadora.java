@@ -1,6 +1,64 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+abstract class Professor {
+    protected String nome;
+
+    public Professor(String nome) {
+        this.nome = nome;
+    }
+
+    public abstract double calcularSalario();
+
+    public void exibirSalario() {
+        System.out.println("O professor " + nome + " recebe um salário de R$ " + calcularSalario() + " por mês");
+    }
+}
+
+class ProfessorCLT extends Professor {
+    private double salarioCLT;
+
+    public ProfessorCLT(String nome, double salarioCLT) {
+        super(nome);
+        this.salarioCLT = salarioCLT;
+    }
+
+    @Override
+    public double calcularSalario() {
+        return salarioCLT;
+    }
+}
+
+class ProfessorHorista extends Professor {
+    private double horasTrabalhadas;
+    private double valorHora;
+
+    public ProfessorHorista(String nome, double horasTrabalhadas, double valorHora) {
+        super(nome);
+        this.horasTrabalhadas = horasTrabalhadas;
+        this.valorHora = valorHora;
+    }
+
+    @Override
+    public double calcularSalario() {
+        return horasTrabalhadas * valorHora;
+    }
+}
+
+class ProfessorPJ extends Professor {
+    private double salarioPJ;
+
+    public ProfessorPJ(String nome, double salarioPJ) {
+        super(nome);
+        this.salarioPJ = salarioPJ;
+    }
+
+    @Override
+    public double calcularSalario() {
+        return salarioPJ;
+    }
+}
+
 public class Calculadora {
     public static void main(String[] args) {
 
@@ -18,34 +76,39 @@ public class Calculadora {
             System.out.println("3 - PJ");
             int TipoDeProf = teclado.nextInt();
 
+            Professor professor = null;
+
             switch (TipoDeProf) {
                 case 1:
                     System.out.println("Digite o número de horas trabalhadas:");
-                    double horasTrabalhadas = teclado.nextDouble();
+                    double horas = teclado.nextDouble();
 
                     System.out.println("Digite o valor recebido por hora de trabalho:");
-                    double valorHora = teclado.nextDouble();
+                    double valorRecebidoHora = teclado.nextDouble();
 
-                    double salarioHorista = horasTrabalhadas * valorHora;
-                    System.out.println("O professor " + nome + " recebe um salário de R$ " + salarioHorista + " por mês");
+                    professor = new ProfessorHorista(nome, horas, valorRecebidoHora);
                     break;
 
                 case 2:
                     System.out.println("Digite seu salário mensal:");
-                    double salarioCLT = teclado.nextDouble();
-                    System.out.println("O professor " + nome + " recebe um salário de R$ " + salarioCLT + " por mês");
+                    double salario = teclado.nextDouble();
+
+                    professor = new ProfessorCLT(nome, salario);
                     break;
 
                 case 3:
                     System.out.println("Digite o valor do seu contrato com a instituição:");
-                    double salarioPJ = teclado.nextDouble();
-                    System.out.println("O professor " + nome + " recebe um salário de R$ " + salarioPJ + " por mês");
+                    double contrato = teclado.nextDouble();
+                    
+                    professor = new ProfessorPJ(nome, contrato);
                     break;
 
                 default:
                     System.out.println("Erro: Tipo de professor inválido.");
                     break;
             }
+
+            professor.exibirSalario();
 
         } catch (InputMismatchException e) {
             System.out.println("Erro: Entrada inválida. Certifique-se de digitar números corretamente.");
