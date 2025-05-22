@@ -4,5 +4,5 @@ Alunos:
 
 Marcelo Henrique Silvestre da Silva- RA 1352312397 <br>
 Anne Caroline da Silva Medeiros - RA 1282413952 <br>
-Guilherme Lima Macario - RA 1352423478
+Guilherme Lima Macario - RA 1352423478 <br>
 Marcos Felipe da Silva Oliveira - RA: 722312100
