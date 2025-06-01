@@ -1,4 +1,39 @@
+# Gestão salarial de Professores
 
+## 📌 O que o código faz?
+
+Este sistema calcula e armazena o salário de professores indicados, oferecendo suporte a três modalidades contratuais:
+
+- **CLT**
+- **PJ**
+- **Horista**
+
+Na sua primeira versão, o sistema apenas realizava os cálculos e exibia os resultados no console. Agora, com a adição de um sistema CRUD, os dados também são armazenados em um banco de dados, permitindo maior flexibilidade e persistência das informações.
+
+---
+
+## 🧾 Primeira Versão
+
+A versão inicial do projeto era bastante simples:
+
+- O usuário informava o nome do professor, o tipo de contrato e o valor recebido.
+- O sistema processava essas informações e imprimia os dados no console.
+- O código **não era orientado a objetos**, faltava tratamento de erros e seguia poucas boas práticas de programação.
+- Continha muitos comentários e repetições desnecessárias.
+
+---
+
+## ✅ Versão Final
+
+A versão atual apresenta diversas melhorias significativas:
+
+- Código **orientado a objetos**, facilitando manutenção e extensibilidade.
+- Adoção de **boas práticas de programação**, resultando em um código mais limpo e legível.
+- Implementação de **tratamento de erros** e **testes unitários**, reduzindo a chance de falhas.
+- Integração com **banco de dados** para armazenamento e gerenciamento de professores.
+- Além dos cálculos, agora é possível **salvar**, **editar** e **consultar** professores e suas informações.
+
+---
 
 
 ## Testes
