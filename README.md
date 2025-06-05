@@ -31,7 +31,7 @@ A versão atual apresenta diversas melhorias significativas:
 - Adoção de **boas práticas de programação**, resultando em um código mais limpo e legível.
 - Implementação de **tratamento de erros** e **testes unitários**, reduzindo a chance de falhas.
 - Integração com **banco de dados** para armazenamento e gerenciamento de professores.
-- Além dos cálculos, agora é possível **salvar**, **editar** e **consultar** professores e suas informações.
+- Além dos cálculos, agora é possível **salvar**, **deletar**, **editar** e **consultar** professores e suas informações.
 
 ---
 
