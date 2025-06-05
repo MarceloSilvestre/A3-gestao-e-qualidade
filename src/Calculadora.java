@@ -74,20 +74,21 @@ public class Calculadora {
 
         try {
             limparTela();
-            System.out.println("Bem-vindo ao sistema de gerenciamento dos professores!");
-            System.out.println("Por favor, insira a opção que deseja para avançar.");
-            System.out.println("\n1 - Exibir todos os professores");
-            System.out.println("2 - Procurar professor por número");
-            System.out.println("3 - Inserir novo professor");
-            System.out.println("4 - Calcular salário de um professor");
-            System.out.println("5 - Atualizar professor");
-            System.out.println("6 - Apagar professor");
-            System.out.println("7 - Atualizar salário de um professor");
-            System.out.println("8 - Apagar salário de um professor");
-            System.out.println("9 - Sair do programa");
-            System.out.print("\nOpção: ");
+            System.out.println("Bem-vindo ao sistema de gerenciamento!"
+            + "\nPor favor, insira a opção que deseja para avançar."
+            + "\n"
+            + "\n1 - Exibir todos os professores"
+            + "\n2 - Procurar professor por número"
+            + "\n3 - Inserir novo professor"
+            + "\n4 - Calcular salário de um professor"
+            + "\n5 - Atualizar professor"
+            + "\n6 - Apagar professor"
+            + "\n7 - Atualizar salário de um professor"
+            + "\n8 - Apagar salário de um professor"
+            + "\n9 - Sair do programa"
+            + "\nOpção: ");
             int opcao = teclado.nextInt();
-            teclado.nextLine(); // Limpa buffer
+            teclado.nextLine();
 
             limparTela();
             switch (opcao) {
@@ -189,7 +190,6 @@ public class Calculadora {
     private static void inserirNovoProfessor(Scanner teclado) {
         try {
             System.out.println("Digite o nome do professor:");
-            teclado.nextLine(); // Limpa buffer caso necessário
             String nome = teclado.nextLine();
             limparTela();
 
@@ -221,7 +221,7 @@ public class Calculadora {
         try (Connection conexao = Conexao.obterConexao()) {
             System.out.println("Digite o ID do professor que deseja calcular o salário:");
             int idProf = teclado.nextInt();
-            teclado.nextLine(); // Limpa buffer
+            teclado.nextLine();
             limparTela();
 
             // Busca o nome e o tipo do professor
@@ -340,7 +340,7 @@ public class Calculadora {
     private static void atualizarProfessor(Scanner teclado) {
         System.out.println("Digite o número/ID do professor que deseja atualizar:");
         int numIdAtualizar = teclado.nextInt();
-        teclado.nextLine(); // Limpa buffer
+        teclado.nextLine();
         limparTela();
 
         try (Connection conexao = Conexao.obterConexao();
@@ -411,7 +411,7 @@ public class Calculadora {
     private static void apagarProfessor(Scanner teclado) {
         System.out.println("Digite o número/ID do professor que deseja apagar:");
         int numIdDelete = teclado.nextInt();
-        teclado.nextLine(); // Limpa buffer
+        teclado.nextLine();
         limparTela();
 
         try (Connection conexao = Conexao.obterConexao();
@@ -449,7 +449,7 @@ public class Calculadora {
     private static void atualizarSalario(Scanner teclado) {
         System.out.println("Digite o número/ID do professor que deseja atualizar o salário:");
         int numIdSalario = teclado.nextInt();
-        teclado.nextLine(); // Limpa buffer
+        teclado.nextLine(); 
         limparTela();
 
         try (Connection conexao = Conexao.obterConexao();
@@ -524,7 +524,7 @@ public class Calculadora {
     private static void apagarSalario(Scanner teclado) {
         System.out.println("Digite o número/ID do professor que deseja remover o salário:");
         int numIdRemoveSalario = teclado.nextInt();
-        teclado.nextLine(); // Limpa buffer
+        teclado.nextLine();
         limparTela();
 
         try (Connection conexao = Conexao.obterConexao();
