@@ -5,8 +5,8 @@
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "d:\\Codes\\A3-gestao-e-qualidade\\lib\\junit-jupiter-api-5.9.3.jar",
-        "d:\\Codes\\A3-gestao-e-qualidade\\lib\\junit-platform-console-standalone-1.9.3.jar",
-        "d:\\Codes\\A3-gestao-e-qualidade\\lib\\mysql-connector-j-9.3.0.jar"
+        "lib/junit-jupiter-api-5.9.3.jar",
+        "lib/junit-platform-console-standalone-1.9.3.jar",
+        "lib/mysql-connector-j-9.3.0.jar"
     ]
 }
