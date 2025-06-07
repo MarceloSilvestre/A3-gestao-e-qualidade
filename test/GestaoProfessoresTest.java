@@ -1,7 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-public class CalculadoraTest {
+public class GestaoProfessoresTest {
 
     @Test
     void salarioProfessorCLT() {
