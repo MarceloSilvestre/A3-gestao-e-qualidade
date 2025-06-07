@@ -1,7 +1,12 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "src",
+        "test"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "d:\\Codes\\A3-gestao-e-qualidade\\lib\\junit-jupiter-api-5.9.3.jar",
+        "d:\\Codes\\A3-gestao-e-qualidade\\lib\\junit-platform-console-standalone-1.9.3.jar",
+        "d:\\Codes\\A3-gestao-e-qualidade\\lib\\mysql-connector-j-9.3.0.jar"
     ]
 }
