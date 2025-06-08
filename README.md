@@ -44,7 +44,7 @@ Este projeto utiliza o framework [JUnit 5](https://junit.org/junit5/) para a exe
 
 1. Compile o projeto no terminal:
    ```sh
-   javac -cp "lib/*" -d bin src/*.java test/CalculadoraTest.java
+   javac -cp "lib/*" -d bin src/*.java test/GestaoProfessoresTest.java
 
    ```
 
