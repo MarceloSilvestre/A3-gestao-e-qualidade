@@ -68,7 +68,7 @@ Cada teste verifica se o método `calcularSalario()` retorna o valor esperado pa
 
 ```
 JUnit Jupiter [OK]
-  CalculadoraTest [OK]
+  estaoProfessoresTest [OK]
     salarioProfessorCLT() [OK]
     salarioProfessorHorista() [OK]
     salarioProfessorPJ() [OK]
